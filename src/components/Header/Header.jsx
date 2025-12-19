@@ -8,6 +8,8 @@ const Header = () => {
 
         {/* Logo */}
         <div className="header-logo">
+          <span class="material-symbols-outlined text-primary text-3xl">local_hospital</span>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"></link>
           <h2>Lakes Medicals</h2>
         </div>
 
