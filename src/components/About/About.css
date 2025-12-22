@@ -1,0 +1,168 @@
+:root {
+  --primary: #408c9e;
+}
+
+/* General */
+.about {
+  font-family: 'Inter', sans-serif;
+  color: #374151;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  color: #374151;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  color: var(--primary);
+  font-size: 28px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #374151;
+}
+
+.nav .active {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+}
+
+/* About Section */
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+.about-img {
+  flex: 1;
+  height: 280px;
+  border-radius: 16px;
+  background: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOmFeHUqqMPHPbHtmxuHENUSsNMDumUHwtiFaHIPEdVY6dMv6QuF0S5Xlatqr7YhSD6fsHWUDXXGbuaLb9S2SbW1mEYNENM0lnJVufo8-OufgTCHdQMoNGuk5rHZb0g8g8J6rxary-z_cNZSbtQlnE4ppE-YHAdbJU4wgOhSI2AiI_fyHskfvtubSTCM6oDeNfxuKzZPL9DbOZyCdpMEKqkCRe0kmBSsACCaUIOy6NZbQ_JesqBqGj8vm9nTdtG_80D6oiwvOJs8cQ") center / cover no-repeat;
+}
+
+.about-content {
+  flex: 1;
+}
+
+/* Values Section */
+.values-glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.value-card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #dbe2e6;
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(64, 140, 158, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+/* Vision Section */
+.vision-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+.vision-img {
+  flex: 1;
+  height: 280px;
+  border-radius: 16px;
+  background: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmKhmpv8wyVXCLkxl4RXR2Yci3TxIz0uQ7ZdR-qv2kIvcfyLVv3Xp57HeGPDs13tsPLgLfwW-byJoGBQf3JFxO1SYHlBc_RuJxRKptKuzs36xzEufoF5CmwdPernP3hflym9dsbRnOsrpGymdDx-g0ZhXuyWkJQ0Hum_Try13JMpvsg1WGcxtJXorrQbLbOAIMrwDjP4VZ4mDvwASS0OfKH2FsyzB-dYhf8cnwbooG7c574n4Y_3YNhGlsJHWTUgV1qrdraRPpnEMH") center / cover no-repeat;
+}
+
+.vision-content {
+  flex: 1;
+}
+
+.footer {
+  background: white;
+  text-align: center;
+  padding: 30px;
+  color: #374151;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper, .vision-wrapper {
+    flex-direction: column;
+  }
+}
