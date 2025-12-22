@@ -1,23 +1,33 @@
 import React from "react";
+import {
+  FaHospital,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope
+} from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer id="footer" className="footer">
       <div className="footer-container">
+
         <div className="footer-grid">
-          
+
+          {/* Brand */}
           <div className="footer-brand">
-            <div className="brand-header">
-              <span className="material-symbols-outlined">local_hospital</span>
-              <span className="brand-name">Lakes Medical</span>
+            <div className="footer-logo">
+              <FaHospital className="footer-logo-icon" />
+              <span>Lakes Medical</span>
             </div>
-            <p className="brand-text">
-              Your trusted local GP practice, dedicated to providing high-quality healthcare.
+            <p>
+              Your trusted local GP practice, dedicated to providing
+              high-quality healthcare.
             </p>
           </div>
-          
-          <div className="footer-links">
+
+          {/* Quick Links */}
+          <div>
             <h3>Quick Links</h3>
             <ul>
               <li><a href="#home">Home</a></li>
@@ -27,39 +37,43 @@ const Footer = () => {
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          
-          <div className="footer-contact">
+
+          {/* Contact Info */}
+          <div>
             <h3>Contact Info</h3>
-            <ul>
+            <ul className="contact-list">
               <li>
-                <span className="material-symbols-outlined">location_on</span>
+                <FaMapMarkerAlt />
                 <span>1 South Lake Drive, South Lake, WA 6164</span>
               </li>
               <li>
-                <span className="material-symbols-outlined">call</span>
+                <FaPhoneAlt />
                 <span>08 6256 0068</span>
               </li>
               <li>
-                <span className="material-symbols-outlined">mail</span>
+                <FaEnvelope />
                 <span>info@lakesmedical.com.au</span>
               </li>
             </ul>
           </div>
-          
-          <div className="footer-hours">
+
+          {/* Opening Hours */}
+          <div>
             <h3>Opening Hours</h3>
             <ul>
-              <li>Mon-Fri: 8.00am-5.15pm</li>
-              <li>Saturday: 7.00am-1.00pm</li>
-              <li>Sunday: 7.00am-1.00pm</li>
+              <li>Mon–Fri: 8.00am – 5.15pm</li>
+              <li>Saturday: 7.00am – 1.00pm</li>
+              <li>Sunday: 7.00am – 1.00pm</li>
             </ul>
           </div>
 
         </div>
-        
+
+        {/* Bottom */}
         <div className="footer-bottom">
-          <p>© 2024 Lakes Medical. All rights reserved.</p>
+          © 2024 Lakes Medical. All rights reserved.
         </div>
+
       </div>
     </footer>
   );
