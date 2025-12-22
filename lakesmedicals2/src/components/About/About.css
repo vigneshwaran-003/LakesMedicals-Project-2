@@ -1,0 +1,244 @@
+:root {
+  --primary: #408c9e;
+}
+
+/* Base */
+.about {
+  background: #b9eaf4;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  background: white;
+  color: #374151;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  color: #374151;
+  text-decoration: none;
+}
+
+.nav .active {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+ 
+}
+
+/* Sections */
+.section {
+  padding: 80px 40px;
+}
+
+/* About */
+.about-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-img {
+  flex: 1;
+  height: 280px;
+  border-radius: 16px;
+  background: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOmFeHUqqMPHPbHtmxuHENUSsNMDumUHwtiFaHIPEdVY6dMv6QuF0S5Xlatqr7YhSD6fsHWUDXXGbuaLb9S2SbW1mEYNENM0lnJVufo8-OufgTCHdQMoNGuk5rHZb0g8g8J6rxary-z_cNZSbtQlnE4ppE-YHAdbJU4wgOhSI2AiI_fyHskfvtubSTCM6oDeNfxuKzZPL9DbOZyCdpMEKqkCRe0kmBSsACCaUIOy6NZbQ_JesqBqGj8vm9nTdtG_80D6oiwvOJs8cQ") center / cover no-repeat;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: rgb(41, 52, 67);
+}
+
+.about-content p {
+  color: rgb(41, 52, 67);
+}
+
+/* VALUES – GLASS EFFECT */
+.values-glass {
+  max-width: 1200px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 48px;
+  color: #374151;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.value-card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #dbe2e6;
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.icon {
+  background: rgba(13, 110, 253, 0.1);
+  color: var(--primary);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+/* Vision Section */
+.vision-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center; /* Vertical center */
+}
+.vision-content h2,
+.vision-content p,
+.vision-content ul li span {
+  color: rgb(41, 52, 67);
+}
+
+.vision-img {
+  flex: 1;
+  min-height: 280px;
+  border-radius: 16px;
+  background: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmKhmpv8wyVXCLkxl4RXR2Yci3TxIz0uQ7ZdR-qv2kIvcfyLVv3Xp57HeGPDs13tsPLgLfwW-byJoGBQf3JFxO1SYHlBc_RuJxRKptKuzs36xzEufoF5CmwdPernP3hflym9dsbRnOsrpGymdDx-g0ZhXuyWkJQ0Hum_Try13JMpvsg1WGcxtJXorrQbLbOAIMrwDjP4VZ4mDvwASS0OfKH2FsyzB-dYhf8cnwbooG7c574n4Y_3YNhGlsJHWTUgV1qrdraRPpnEMH") center / cover no-repeat;
+}
+
+.vision-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.vision-content h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.vision-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.vision-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.vision-content ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.vision-content ul li span:first-child {
+  color: var(--primary);
+  font-size: 20px;
+  line-height: 1;
+}
+/* Vision Section Button Alignment */
+.vision-content .btn {
+  margin-top: 16px;  /* keep space above button */
+  align-self: flex-start; /* align left with text */
+  padding: 10px 18px; /* button padding */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vision-wrapper {
+    flex-direction: column;
+  }
+
+  .vision-content h2 {
+    font-size: 28px;
+  }
+}
+
+/* Footer */
+.footer {
+  background: white;
+  color: #374151;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper,
+  .vision-wrapper {
+    flex-direction: column;
+  }
+
+  .about-content h1 {
+    font-size: 36px;
+  }
+}
