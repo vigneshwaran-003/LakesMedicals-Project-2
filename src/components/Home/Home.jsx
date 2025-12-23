@@ -34,16 +34,18 @@ const Home = () => {
               Your trusted local GP practice, dedicated to providing
               high-quality, accessible healthcare for you and your family.
             </p>
-            <div className="hero-actions">
-              <button className="btn-primary">📅 Book Appointment</button>
-              <button
-                onClick={() => (window.location.href = "tel:+919876543210")}
-                className="btn-phone"
-              >
-                <PhoneIcon />
-                +91 9876543210
-              </button>
-            </div>
+            <div class="hero-buttons">
+  <a href="#book" class="btn btn-primary">
+    <span class="material-symbols-outlined">calendar_month</span>
+    <span>Book Appointment</span>
+  </a>
+
+  <a href="tel:0862560068" class="btn btn-outline">
+    <span class="material-symbols-outlined">call</span>
+    <span>08 6256 0068</span>
+  </a>
+</div>
+
           </div>
           <div className="hero-image-wrapper">
             <img

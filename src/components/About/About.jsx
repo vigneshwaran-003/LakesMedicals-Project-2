@@ -4,20 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <div className="about">
-      {/* Header */}
-      <header className="header">
-        <div className="logo">
-          <div className="logo-icon">+</div>
-          <h2>Lakes Medical Centre</h2>
-        </div>
-        <nav className="nav">
-          <a href="/">Home</a>
-          <a href="/">Services</a>
-          <a className="active" href="/">About Us</a>
-          <a href="/">Contact</a>
-          <button className="btn">Book Appointment</button>
-        </nav>
-      </header>
+     
 
       {/* About Section */}
       <section className="section about-section">
