@@ -1,43 +1,47 @@
 import React from "react";
 import "./Header.css";
+import { HashLink as Link } from "react-router-hash-link";
+
 
 const Header = () => {
   return (
-    <header className="header">
+    <header>
       <div className="header-container">
-
         {/* Logo */}
         <div className="header-logo">
-          <span class="material-symbols-outlined text-primary text-3xl">local_hospital</span>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"></link>
-          <h2>Lakes Medicals</h2>
+          <span className="material-symbols-outlined">
+            local_hospital
+          </span>
+          <span className="logo-text">Lakes Medical</span>
         </div>
 
-        {/* Navigation */}
         <nav className="header-nav">
-          <a href="/" className="nav-link">Home</a>
-          <a href="/about" className="nav-link">About</a>
-          <a href="/services" className="nav-link">Services</a>
-          <a href="/doctors" className="nav-link">Doctors</a>
-          <a href="/contact" className="nav-link">Contact</a>
-        </nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link smooth to="/#services">Services</Link>
+      <Link smooth to="/#doctors">Doctors</Link>
+      <Link smooth to="/#contact">Contact</Link>
+    </nav>
 
-        {/* Actions */}
-        <div className="header-actions">
-          <a href="/appointment" className="btn-primary">
-            Book Appointment
-          </a>
+        {/* <nav className="header-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#doctors">Doctors</a>
+          <a href="#contact">Contact</a>
+        </nav> */}
 
-          <button
-            onClick={() => (window.location.href = "tel:+919876543210")}
-            className="btn-phone"
-          >
-            <svg viewBox="0 0 512 512" fill="currentColor">
-              <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-            </svg>
-            +91 9876543210
-          </button>
-        </div>
+        <div class="hero-buttons">
+
+  <a href="tel:0862560068" class="btn btn-outline">
+    <span class="material-symbols-outlined">call</span>
+    <span>08 6256 0068</span>
+  </a>
+  <a href="#book" class="btn btn-primary">
+    <span class="material-symbols-outlined">calendar_month</span>
+    <span>Book Appointment</span>
+  </a>
+</div>
 
       </div>
     </header>

@@ -1,49 +1,165 @@
 /* =========================
    HERO SECTION
    ========================= */
+
 .hero {
-  background: #dbf3ff;
+  background: linear-gradient(135deg, #e8f6ff, #ffffff);
   padding: 80px 20px;
 }
 
 .hero-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
+/* =========================
+   HERO CONTENT
+   ========================= */
+
 .hero-content {
-  max-width: 520px;
+  flex: 1;
+  min-width: 320px;
 }
 
 .hero-content h1 {
-  font-size: 42px;
+  font-size: 50px;
   font-weight: 700;
-  color: #193f5e;
+  color: rgb(25 92 126 / var(--tw-text-opacity, 1)) ;
   line-height: 1.2;
+  margin-bottom: 20px;
+  margin-top: -100px;
 }
 
 .hero-content p {
-  margin: 16px 0 28px;
-  color: #374151;
-  font-size: 16px;
+  font-size: 18px;
+  color: #475569;
+  max-width: 520px;
+  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
-.hero-actions {
+/* =========================
+   HERO BUTTONS
+   ========================= */
+
+.hero-buttons {
   display: flex;
-  gap: 12px;
+  gap: 16px;
+  
   flex-wrap: wrap;
+}
+
+/* Base button */
+.hero-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 9999px; /* ✅ FULL ROUND */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   BOOK APPOINTMENT BUTTON
+   ========================= */
+
+/* =========================
+   BOOK APPOINTMENT BUTTON
+   ========================= */
+
+.hero-buttons .btn-primary {
+  background:#1e7680 ;
+  color: #ffffff;
+  border: 0.5px solid #1e7680; /* ✅ rounded border */
+  border-radius: 9999px; /* ✅ force pill shape */
+}
+
+.hero-buttons .btn-primary:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 12px 25px rgba(44, 221, 241, 0.35); */
+}
+
+/* =========================
+   PHONE NUMBER BUTTON
+   ========================= */
+
+.hero-buttons .btn-outline {
+  background: #1e7680;
+  color: #ffffff;
+  border: 0.5px solid #1e7680; /* ✅ rounded border */
+}
+
+.hero-buttons .btn-outline:hover {
+  background: #1e707a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   MOBILE FRIENDLY
+   ========================= */
+
+@media (max-width: 640px) {
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+
+
+
+/* =========================
+   HERO IMAGE
+   ========================= */
+
+.hero-image-wrapper {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image-wrapper img {
   width: 100%;
   max-width: 520px;
-  border-radius: 16px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(2, 132, 199, 0.15);
 }
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-container {
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
 
 /* =========================
    CONTACT SECTION
@@ -146,7 +262,7 @@
 .about-content h2 {
   font-size: 32px; /* 2xl / 4xl */
   font-weight: 700;
-  color: rgb(25 92 126 / var(--tw-text-opacity, 1)); /* primary-dark */
+  color: rgb(25 92 126 / var(--tw-text-opacity, 1));
   margin-bottom: 16px;
 }
 
@@ -202,7 +318,7 @@
 .services-title {
   font-size: 32px;
   font-weight: 700;
-  color: #1f2937;
+  color: rgb(25 92 126 / var(--tw-text-opacity, 1));
   margin-bottom: 12px;
 }
 
@@ -285,7 +401,7 @@
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  color: #1f2937;
+  color:rgb(25 92 126 / var(--tw-text-opacity, 1));
   margin-bottom: 12px;
 }
 
@@ -320,7 +436,7 @@
 .after-hours-box h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #1f2937;
+  color:rgb(25 92 126 / var(--tw-text-opacity, 1));
   margin-bottom: 16px;
 }
 
@@ -400,7 +516,7 @@
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  color: #1f2937;
+  color: rgb(25 92 126 / var(--tw-text-opacity, 1));  
   margin-bottom: 12px;
 }
 
