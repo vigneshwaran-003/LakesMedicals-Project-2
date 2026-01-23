@@ -20,7 +20,7 @@ const Header = () => {
       <Link to="/about">About</Link>
       <Link smooth to="/#services">Services</Link>
       <Link smooth to="/#doctors">Doctors</Link>
-      <Link smooth to="/#contact">Contact</Link>
+      <Link to="/contact">Contact</Link>
     </nav>
 
         {/* <nav className="header-nav">

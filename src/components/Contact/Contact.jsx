@@ -1,43 +1,27 @@
 import React from "react";
-import "./contact.css";
+import "./Contact.css";
+
+import img1 from "../../Assets/Images/Screenshot 2026-01-23 115109.png";
+import img2 from "../../Assets/Images/Screenshot 2026-01-23 115118.png";
+import img3 from "../../Assets/Images/Screenshot 2026-01-23 115125.png";
+import img4 from "../../Assets/Images/Screenshot 2026-01-23 115135.png";
+
+
 
 const Contact = () => {
   return (
-    <div className="contact-page">
-      {/* Top Info Bar */}
-      <div className="top-header">
-        <p className="opening-hours">
-          Opening hours: Mon–Fri: 8.00am–5.15pm | Sat: 7.00am–1.00pm | Sun:
-          7.00am–1.00pm
-        </p>
-        <div className="top-actions">
-          <a href="tel:0862560068" className="phone">
-            📞 (08) 6256 0068
-          </a>
-          <a href="https://www.lakesmedical.com.au/apt" className="book-btn">
-            Book an Appointment
-          </a>
-        </div>
-      </div>
-
-      {/* Hero / Banner */}
-      <section className="contact-hero">
-        <img
-          src="/assets/images/Contact-us.webp"
-          alt="Contact Us"
-          className="hero-img"
-        />
-        <div className="breadcrumb">
-          <a href="/">Home</a> <span>•</span> <span>Contact Us</span>
-        </div>
-      </section>
-
-      {/* Contact Cards */}
-      <section className="contact-info">
-        <h2>We want to share our location to find us easily.</h2>
-        <div className="contact-cards">
+    <>
+      <h2 className="contact-main-title">
+        WE WANT TO SHARE OUR LOCATION TO FIND US EASILY.
+      </h2>
+      <section className="contact-section">
+        {/* Top Contact Cards */}
+        <div className="contact-grid">
+          <div className="contact-cards">
           <div className="contact-card">
-            <div className="icon">📍</div>
+            <div className="icon-box">
+              <i className="fas fa-map-marker-alt"></i>
+            </div>
             <h3>Our Address</h3>
             <p>
               1 South Lake Drive,
@@ -47,60 +31,85 @@ const Contact = () => {
           </div>
 
           <div className="contact-card">
-            <div className="icon">📞</div>
+            <div className="icon-box">
+              <i className="fas fa-phone-alt"></i>
+            </div>
             <h3>Our Phone</h3>
             <p>(08) 6256 0068</p>
           </div>
 
           <div className="contact-card">
-            <div className="icon">📠</div>
+            <div className="icon-box">
+              <i className="fas fa-envelope"></i>
+            </div>
             <h3>Our Fax</h3>
             <p>(08) 6102 3765</p>
           </div>
         </div>
-      </section>
-
-      {/* Google Map */}
-      <section className="map-section">
-        <iframe
-          title="Lakes Medical Location"
-          src="https://www.google.com/maps?q=Lakes%20Medical%20Centre%20WA&output=embed"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-
-      {/* Opening Hours & Location */}
-      <section className="opening-location">
-        <div className="box">
-          <h3>OPENING HOURS</h3>
-          <p>Monday to Friday : 8.00am - 5.15pm</p>
-          <p>Saturday : 7.00am - 1.00pm</p>
-          <p>Sunday : 7.00am - 1.00pm</p>
-
-          <h3>LOCATION</h3>
-          <p>1 South Lake Drive, South Lake, WA 6164</p>
         </div>
 
-        <div className="box">
-          <h3>DOWNLOAD OUR APP</h3>
-          <p>
-            Booking an appointment has never been easier! You can now book your
-            appointment from your phone.
-          </p>
-          <a
-            href="https://apps.apple.com/us/app/lakes-medical-centre/id1491124972"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="/assets/images/App-store-badge.png"
-              alt="Download on App Store"
-            />
-          </a>
+        {/* Map + Info Section */}
+        <div className="contact-container">
+          <div className="contact-wrapper">
+            <div className="map-box">
+              <iframe
+                title="Lakes Medical Location"
+                src="https://www.google.com/maps?q=Lakes+Medical,+1+S+Lake+Dr,+South+Lake+WA+6164&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div className="contact-info">
+              <h3>Lakes Medical</h3>
+              <p>
+                <strong>Address:</strong>
+                <br />
+                1 S Lake Dr, South Lake WA 6164, Australia
+              </p>
+
+              <p>
+                <strong>Phone:</strong>
+                <br />
+                (08) 6256 0068
+              </p>
+
+              <p>
+                <strong>Email:</strong>
+                <br />
+                info@lakesmedical.com.au
+              </p>
+
+              <p>
+                <strong>Opening Hours:</strong>
+                <br />
+                Mon–Fri: 8:00am – 5:15pm
+                <br />
+                Sat: 7:00am – 1:00pm
+                <br />
+                Sun: 7:00am – 1:00pm
+              </p>
+
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Lakes+Medical,+South+Lake+WA+6164"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="direction-btn"
+              >
+                Get Directions
+              </a>
+            </div>
+          </div>
         </div>
+        <div className="care-images">
+          <div><img src={img1} alt="care-first" /></div>
+          <div><img src={img2} alt="care-second" /></div>
+          <div><img src={img3} alt="care-third" /></div>
+          <div><img src={img4} alt="care-fourth" /></div>
+        </div>
+
       </section>
-    </div>
+    </>
   );
 };
 
